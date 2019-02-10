@@ -24,7 +24,7 @@ public abstract class Taller {
 	}
 	
 	public String datosAdministrador() {
-		return ;
+		return Administrador.getNombre()+ ": " + Administrador.getDNI();
 	}
 
 	public abstract void aumentarAnosServicio();

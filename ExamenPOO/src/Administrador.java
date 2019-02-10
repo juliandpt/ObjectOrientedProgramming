@@ -1,8 +1,8 @@
 
 public class Administrador {
 	
-	private String nombreAdm;
-	private String dni;
+	private static String nombreAdm;
+	private static String dni;
 	private int anosServicio;
 	
 	public Administrador (String nombreAdm, String dni) {
@@ -10,11 +10,11 @@ public class Administrador {
 		this.dni = dni;
 	}
 	
-	public String getNombre() {		
+	public static String getNombre() {		
 		return nombreAdm;
 	}
 	
-	public String getDni() {
+	public static String getDNI() {
 		return dni;
 	}
 	
