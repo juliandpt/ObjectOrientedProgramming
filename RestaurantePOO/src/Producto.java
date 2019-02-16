@@ -1,19 +1,21 @@
 
 public abstract class Producto {
 	
+	private Pasta pasta;
+	private Pizza pizza;
 	public Producto() {
 		
 	}
 	
-	public abstract double getPrecio() {
-		return Pasta.getPrecio();
+	public double getPrecio() {
+		return pasta.getPrecio();
 	}
 	
-	public abstract boolean esPizza() {
-		return Pizza.esPizza();
+	public boolean esPizza() {
+		return pizza.esPizza();
 	}
 	
-	public abstract String descripcion() {
-		return Pizza.descripcion();
+	public String descripcion() {
+		return pizza.descripcion();
 	}
 }

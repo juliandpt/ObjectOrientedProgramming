@@ -29,7 +29,6 @@ public class Taller {
 	}
 	
 	public String datosAdministrador() {
-		administrador = new Administrador("Jose", "32457684J");
 		return administrador.getNombre()+ " : " + administrador.getDNI();
 	}
 
@@ -38,19 +37,15 @@ public class Taller {
 	}
 	
 	public boolean anadirVehiculo (Vehiculo vehiculo) {
-		if (vehiculos.contains(vehiculo)) {
-			return false;
+		String matricula = vehiculo.getMatricula(); 
+		for (int i = 0; i < vehiculos.size(); i++) {
+				return false;
 		}
-		
 		return vehiculos.add(vehiculo);	
 	}
 	
-	public boolean eliminarVehiculo (Vehiculo vehiculo) {
-		if (vehiculos.contains(vehiculo)) {
-			return true;
-		}
-		
-		return false;
+	public boolean eliminarVehiculo (String matricula) {
+		return vehiculos.remove(matricula);
 	}
 	
 	private boolean existeVehiculo (String matricula) {

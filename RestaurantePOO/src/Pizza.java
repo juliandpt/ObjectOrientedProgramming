@@ -28,7 +28,7 @@ public class Pizza extends Producto{
 	}
 	
 	public boolean esPizza() {
-		return false;
+		return true;
 	}
 	
 	public double getPrecio() {
