@@ -39,7 +39,9 @@ public class Taller {
 	public boolean anadirVehiculo (Vehiculo vehiculo) {
 		String matricula = vehiculo.getMatricula(); 
 		for (int i = 0; i < vehiculos.size(); i++) {
-				return false;
+				if (vehiculo.contains(matricula)) {
+					
+				}
 		}
 		return vehiculos.add(vehiculo);	
 	}
