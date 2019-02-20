@@ -9,9 +9,14 @@ public class PruebasEnMain {
 		Vehiculo vehiculo2 = new Vehiculo("Todoterreno", "Range Rover", "123456");
 		System.out.println(taller.anadirVehiculo(vehiculo1));
 		System.out.println(taller.anadirVehiculo(vehiculo1));
+		System.out.println(taller.anadirVehiculo(vehiculo2));
+		taller.imprimirVehiculos();
 		System.out.println(taller.eliminarVehiculo(vehiculo2.getMatricula()));
+		System.out.println("Borrado?");
+		taller.imprimirVehiculos();
 		System.out.println(taller.datosAdministrador());
 		System.out.println(taller.eliminarVehiculo(vehiculo1.getMatricula()));
+		
 	}
-
+	
 }
