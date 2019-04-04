@@ -13,7 +13,7 @@ public class AvionMotorN2 extends Avion implements Comparable<AvionMotor> {
 	public boolean tieneMotor() {
 		return true;
 	}
-
+	
 	public double calcularAutonomia() {
 		return combustible * millasPorGalon;
 	}

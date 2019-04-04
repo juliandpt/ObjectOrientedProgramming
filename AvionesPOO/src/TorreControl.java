@@ -9,7 +9,12 @@ public class TorreControl {
 	public String nombreAeropuerto;
 	public Parking parking;
 	public List<Avion> aviones;
-
+	
+	/**
+	 * Crea una torre de control
+	 * @param nombreAeropuerto asigna un nombre a un aeropuerto
+	 * @param nombreParking
+	 */
 	public TorreControl(String nombreAeropuerto, String nombreParking) {
 		this.nombreAeropuerto = nombreAeropuerto;
 		this.parking = new Parking(nombreParking);
