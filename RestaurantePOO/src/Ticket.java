@@ -12,11 +12,19 @@ public class Ticket {
 		this.productos = new ArrayList<>();
 	}
 	
+	public boolean getPromoPizza() {
+		return true;
+	}
+	
+	public boolean getPromoPasta() {
+		return true;
+	}
+	
 	public void anadirProducto (Producto producto) {
 		productos.add(producto);
 	}
 	
-	public String imprimirTicket() {
+	public ArrayList<Producto> imprimirTicket() {
 		return productos;
 	}
 }

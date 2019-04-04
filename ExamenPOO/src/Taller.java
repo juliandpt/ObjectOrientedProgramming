@@ -36,9 +36,9 @@ public class Taller {
 		administrador.aumentarAnosServicio();
 	}
 	
-	public boolean anadirVehiculo (Vehiculo vehiculo) {   //preguntar que tipos de datos (arraylist, hashmap) entran en el temario
+	public boolean anadirVehiculo (Vehiculo vehiculo) {     //preguntar que tipos de datos (arraylist, hashmap) entran en el temario
 		String matricula = vehiculo.getMatricula(); 
-		for(Vehiculo v : vehiculos) {  //Para cada vehiculo v (elemento del arraylist) en vehiculos
+		for(Vehiculo v : vehiculos) {                       //Para cada vehiculo v (elemento del arraylist) en vehiculos
 			if (matricula.equals(v.getMatricula())) {
 				return false;
 			}
@@ -47,7 +47,7 @@ public class Taller {
 	}
 	
 	public boolean eliminarVehiculo (String matricula) {
-		for(Vehiculo v : vehiculos) {  //Para cada vehiculo v (elemento del arraylist) en vehiculos
+		for(Vehiculo v : vehiculos) {                      //Para cada vehiculo v (elemento del arraylist) en vehiculos
 			if (matricula.equals(v.getMatricula())) {
 				return vehiculos.remove(v);
 			}
@@ -56,8 +56,8 @@ public class Taller {
 	}
 	
 	public void imprimirVehiculos () {
-		for(Vehiculo v : vehiculos) {  //Para cada vehiculo v (elemento del arraylist) en vehiculos
-			System.out.println(v.getMatricula()+" - "+v.getMarca());
+		for(Vehiculo v : vehiculos) {                     //Para cada vehiculo v (elemento del arraylist) en vehiculos
+			System.out.println(v.getMatricula() + " - " + v.getMarca());
 		}
 	
 	}
